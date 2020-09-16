@@ -1,11 +1,11 @@
 {
   "name": "bruhapi",
-  "version": "1.5.0",
+  "version": "1.0.2",
   "description": "Gives random jokes, words, images and more. Also has a text to image feature.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+ "start": "node index.js"
   },
   "keywords": [
     "bruh",
