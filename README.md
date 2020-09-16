@@ -4,32 +4,22 @@ Welcome to the official [BruhAPI](https://bruhapi.xyz) NPM package! This package
 
 
 ### Initialize BruhAPI NPM
-`const bruh = require("bruhapi")`
+`npm install bruhapi`  will install the package.
 
-*_Each module should be wrapped in an async function._
+`const bruh = require("bruhapi")` will reference the package.
 
-### List of Features
-- `tts("text")` - text to speech
-- `spotify("discordID")` - get user's playing spotify song
-- `cb("text")` - talk to cleverbot FREE
-- `tti("text")` - text to image
-----------
-- `joke()` - random joke
-- `word()` - random word
-- `fact()` - random fact
-----------
-- `sub("sub_name")` - random image from subreddit
-- `taco()` - random taco image
+*_Each function using BruhAPI should be async._
 
+### How to Use
+Using the BruhAPI NPM module is very easy! Just use `bruh('/endpoint')` and it'll return the `res` query from the endpoint response. Most responses return `res` for the most important query.
 ### Examples
-For more examples, check the `examples.js` file on GitHub.
 ```js
-const bruh = require("bruhapi")
-async function test() {
-console.log(await bruh.joke())
-}
+const bruh = require("bruhapi") //require the package
+test() //call the function
+async function test() 
+{console.log(await bruh('/fact'))} //declare the function
+``` 
+will return this to the console: `Washington, DC is the capital of the United States of America.`
 
-test()
-```
 --------------------
 If you have any questions, **please join our [Discord server](https://willm.xyz/discord)**! 
